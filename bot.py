@@ -8,7 +8,8 @@ from PIL import Image
 from telegram import Update, InputSticker, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import Application, CommandHandler, MessageHandler, ContextTypes, filters
 
-TOKEN = "8471563407:AAHOkN3FCVc4NsX0j_vOgpIWdR7Xlnr2gCk"  # <-- put your token here
+import os
+TOKEN = os.getenv("TOKEN")
 
 
 # ---------- helpers ----------
